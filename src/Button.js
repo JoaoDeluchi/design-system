@@ -33,29 +33,8 @@ const SIZES = {
 };
 
 const StyledButton = styled.button`
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  padding: ${props => (props.size === SIZES.SMALL ? '8px 16px' : '13px 20px')};
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: all 150ms ease-out;
-  transform: translate3d(0,0,0);
-  vertical-align: top;
-  white-space: nowrap;
-  user-select: none;
-  opacity: 1;
-  margin: 0;
-  background: transparent;
-
-
-  font-size: ${props => (props.size === SIZES.SMALL ? typography.size.s1 : typography.size.s2)}px;
-  font-weight: ${typography.weight.extrabold};
-  line-height: 1;
-
+  border: 10px solid red; 
+  font-size: 20px;
   ${props =>
     !props.isLoading &&
     `
